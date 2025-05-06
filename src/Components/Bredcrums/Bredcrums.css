@@ -1,4 +1,4 @@
-.bredcrums{
+/* .bredcrums{
     display: flex;
     align-items: center;
     gap: 8px;
@@ -9,4 +9,47 @@
     margin-top: 30px;
     margin-bottom: 30px;
     text-transform: capitalize;
+} */
+
+.bredcrums {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #5e5e5e;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    .bredcrums {
+        font-size: 14px;  /* Slightly smaller font size for mobile */
+        gap: 6px;  /* Reduced gap between items */
+        margin-top: 20px;  /* Reduced top margin */
+        margin-bottom: 20px;  /* Reduced bottom margin */
+    }
+}
+
+/* Tablet (600px to 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+    .bredcrums {
+        font-size: 15px;  /* Slightly smaller font size for tablet */
+        gap: 7px;  /* Reduced gap for tablet */
+        margin-top: 25px;  /* Reduced top margin */
+        margin-bottom: 25px;  /* Reduced bottom margin */
+    }
+}
+
+/* Desktop (900px and above) */
+@media (min-width: 900px) {
+    .bredcrums {
+        font-size: 16px;  /* Default font size for desktop */
+        gap: 8px;  /* Default gap for desktop */
+        margin-top: 30px;  /* Default top margin */
+        margin-bottom: 30px;  /* Default bottom margin */
+    }
 }
