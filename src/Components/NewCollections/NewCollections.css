@@ -1,26 +1,85 @@
-.newcollections{
+.newcollections {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-margin-bottom: 100px;
-    
+    gap: 1.25rem; /* 10px = 1.25rem */
+    margin-bottom: 6.25rem; /* 100px = 6.25rem */
 }
-.newcollections h1{
-    color: #171717;
-    font-size:40px;
-    font-weight: 600;
 
+.newcollections h1 {
+    color: #171717;
+    font-size: 2.5rem; /* 40px = 2.5rem */
+    font-weight: 600;
 }
-.newcollections hr{
-    width: 200px;
-    height: 6px;
-    border-radius: 10px;
+
+.newcollections hr {
+    width: 12.5rem; /* 200px = 12.5rem */
+    height: 0.375rem; /* 6px = 0.375rem */
+    border-radius: 0.625rem; /* 10px = 0.625rem */
     background: #252525;
 }
-.collections{
+
+.collections {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 50px;
-    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3.125rem; /* 50px = 3.125rem */
+    gap: 1.875rem; /* 30px = 1.875rem */
+}
+
+/* Item images */
+.item img {
+    width: 12.5rem; /* 200px = 12.5rem */
+    height: 15.625rem; /* 250px = 15.625rem */
+    object-fit: cover;
+}
+
+/* Suit item image with padding */
+.suit-item img {
+    width: 1.25rem; /* 20px = 1.25rem */
+    height: 1.875rem; /* 30px = 1.875rem */
+    padding: 1.5625rem; /* 25px = 1.5625rem */
+}
+
+/* Mobile and tablet responsiveness */
+@media (max-width: 768px) {
+    .newcollections {
+        padding: 0 1.25rem; /* For smaller screens, adding some padding */
+    }
+
+    .collections {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+        gap: 1.25rem; /* Reduce gap between items */
+    }
+
+    .item img {
+        width: 10rem; /* Reduce item image size on smaller screens */
+        height: 12.5rem;
+    }
+
+    .suit-item img {
+        width: 1.125rem; /* Adjust suit item size for mobile */
+        height: 1.5rem;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .newcollections h1 {
+        font-size: 2rem; /* Smaller heading on mobile */
+    }
+
+    .collections {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+
+    .item img {
+        width: 8rem; /* Even smaller image size */
+        height: 10rem;
+    }
+
+    .suit-item img {
+        width: 1rem;
+        height: 1.25rem;
+        padding: 0.75rem;
+    }
 }
