@@ -1,4 +1,4 @@
-/* .productdisplay{
+.productdisplay{
     display: flex;
     margin: 0px 50px;
 }
@@ -89,92 +89,4 @@ color: #ff4141;
 }
 .productdisplay-right-category span{
     font-weight: 600;
-} */
-
-
-.relatedproducts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    height: 90vh;
-}
-
-.relatedproducts h1 {
-    color: #171717;
-    font-size: 40px;
-    font-weight: 600;
-}
-
-.relatedproducts hr {
-    width: 200px;
-    height: 6px;
-    border-radius: 10px;
-    background: #252525;
-}
-
-.relatedproducts-item {
-    margin-top: 50px;
-    display: flex;
-    gap: 30px;
-    justify-content: center; /* Ensure items are centered on larger screens */
-}
-
-/* Responsive Styles */
-
-/* Mobile (default) */
-@media (max-width: 600px) {
-    .relatedproducts h1 {
-        font-size: 28px;
-    }
-
-    .relatedproducts hr {
-        width: 150px;
-        height: 4px;
-    }
-
-    .relatedproducts-item {
-        flex-direction: column;
-        gap: 20px;
-        margin-top: 30px;
-        justify-content: center; /* Center items on small screens */
-    }
-}
-
-/* Tablet (600px to 900px) */
-@media (min-width: 600px) and (max-width: 900px) {
-    .relatedproducts h1 {
-        font-size: 32px;
-    }
-
-    .relatedproducts hr {
-        width: 180px;
-        height: 5px;
-    }
-
-    .relatedproducts-item {
-        flex-direction: row;
-        gap: 25px;
-        margin-top: 40px;
-        justify-content: space-between; /* Maintain spacing between items */
-    }
-}
-
-/* Desktop (900px and above) */
-@media (min-width: 900px) {
-    .relatedproducts h1 {
-        font-size: 40px;
-    }
-
-    .relatedproducts hr {
-        width: 200px;
-        height: 6px;
-    }
-
-    .relatedproducts-item {
-        margin-top: 50px;
-        display: flex;
-        gap: 30px;
-        justify-content: space-between; /* Ensure spacing on larger screens */
-    }
 }

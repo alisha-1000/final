@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
   margin: 0;
@@ -10,66 +10,4 @@ body{
   font-weight: 500;
   font-style: normal;
  
-} */
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  margin: 0;
-  padding: 0;
-}
-
-/* Mobile-first styles (default for small screens) */
-.container {
-  width: 100%;
-  padding: 20px;
-}
-
-/* Tablet: 600px to 900px */
-@media (min-width: 600px) and (max-width: 900px) {
-  body {
-    font-size: 16px;
-  }
-  .container {
-    padding: 30px;
-  }
-}
-
-/* Desktop: 900px and above */
-@media (min-width: 900px) {
-  body {
-    font-size: 18px;
-  }
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-
-/* Large screens (optional): 1200px and above */
-@media (min-width: 1200px) {
-  body {
-    font-size: 20px;
-  }
-  .container {
-    width: 70%;
-  }
-}
-
-/* Specific mobile styles */
-@media (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-  .container {
-    padding: 10px;
-  }
 }
