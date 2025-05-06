@@ -1,9 +1,9 @@
-import React from 'react'
-import "./Footer.css"
-import logo from "../../assets/logo.webp"
-import instagram_icon from "../../assets/instagram.png"
-import facebook_icon from "../../assets/facebook.png"
-import whatsapp_icon from "../../assets/whatsapp.png"
+import React from 'react';
+import "./Footer.css";
+import logo from "../../assets/women2.jpg"; // Replaced with an existing image
+import instagram_icon from "../../assets/instagram.png";
+import facebook_icon from "../../assets/facebook.png";
+import whatsapp_icon from "../../assets/whatsapp.png";
 const Footer = () => {
   return (
     <div className='footer'>
