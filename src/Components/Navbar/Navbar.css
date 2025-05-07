@@ -3,7 +3,7 @@
     justify-content: space-around;
     padding: 16px;
     box-shadow: 0 1px 3px -2px black;
-    flex-wrap: wrap; /* Allows wrapping when needed */
+    flex-wrap: wrap; 
 }
 
 .nav-logo {
@@ -26,7 +26,7 @@
     color: #626262;
     font-size: 18px;
     font-weight: 500;
-    flex-wrap: wrap; /* Allows menu items to wrap to the next line if necessary */
+    flex-wrap: wrap; 
 }
 
 .nav-menu li {
@@ -83,63 +83,63 @@
     color: white;
 }
 
-/* Responsive Design */
+
 @media (max-width: 1200px) {
     .nav-menu {
-        gap: 30px; /* Reduce gap between menu items */
+        gap: 30px; 
     }
 
     .nav-menu li {
-        font-size: 16px; /* Reduce font size for medium screens */
+        font-size: 16px; 
     }
 
     .nav-logo p {
-        font-size: 24px; /* Reduce logo font size */
+        font-size: 24px;
     }
 }
 
 @media (max-width: 900px) {
     .navbar {
-        padding: 16px 10px; /* Reduce padding on smaller screens */
+        padding: 16px 10px; 
     }
 
     .nav-menu {
-        gap: 20px; /* Reduce gap between menu items */
+        gap: 20px; 
     }
 
     .nav-login-cart {
-        gap: 30px; /* Reduce space between login and cart */
+        gap: 30px; 
     }
 
     .nav-cart-count {
-        margin-top: -25px; /* Adjust cart count for smaller screens */
+        margin-top: -25px; 
         margin-left: -40px;
     }
 
     .nav-logo p {
-        font-size: 20px; /* Further reduce logo font size */
+        font-size: 20px; 
     }
 }
 
 @media (max-width: 600px) {
     .navbar {
-        padding: 16px 5px; /* Reduce padding for mobile screens */
+        padding: 16px 5px; 
     }
 
     .nav-menu {
-        gap: 15px; /* Reduce gap between menu items */
-        justify-content: center; /* Center the menu items */
+        gap: 15px; 
+        justify-content: center; 
     }
 
     .nav-login-cart {
-        gap: 20px; /* Reduce gap between login and cart */
+        gap: 20px; 
     }
 
     .nav-menu li {
-        font-size: 14px; /* Reduce font size for small screens */
+        font-size: 14px; 
     }
 
     .nav-logo p {
-        font-size: 18px; /* Adjust logo font size for mobile */
+        font-size: 18px; 
     }
 }

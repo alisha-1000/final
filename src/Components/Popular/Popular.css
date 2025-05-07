@@ -25,48 +25,47 @@
     gap: 30px;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
     .popular h1 {
-        font-size: 35px; /* Adjust heading font size for medium screens */
+        font-size: 35px;
     }
 
     .popular-item {
-        gap: 20px; /* Reduce gap between items */
+        gap: 20px;
     }
 }
 
 @media (max-width: 900px) {
     .popular {
-        height: auto; /* Allow height to adjust based on content */
-        padding: 20px; /* Add padding for small screens */
+        height: auto;
+        padding: 20px;
     }
 
     .popular h1 {
-        font-size: 30px; /* Further reduce font size */
+        font-size: 30px;
     }
 
     .popular-item {
-        flex-direction: column; /* Stack items vertically */
-        gap: 20px; /* Reduce gap between items */
-        margin-top: 30px; /* Reduce margin for smaller screens */
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 30px;
     }
 
     .popular hr {
-        width: 150px; /* Adjust width of horizontal line for smaller screens */
+        width: 150px;
     }
 }
 
 @media (max-width: 600px) {
     .popular h1 {
-        font-size: 24px; /* Reduce font size for mobile */
+        font-size: 24px;
     }
 
     .popular-item {
-        gap: 15px; /* Further reduce gap for mobile */
+        gap: 15px;
     }
 
     .popular hr {
-        width: 120px; /* Further reduce the width of the horizontal line */
+        width: 120px;
     }
 }

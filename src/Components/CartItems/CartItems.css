@@ -106,80 +106,79 @@
     cursor: pointer;
 }
 
-/* Responsive Design */
+
 @media (max-width: 1200px) {
     .cartitems {
-        margin: 50px 30px; /* Reduce margins */
+        margin: 50px 30px; 
     }
 
     .cartitems-format-main {
-        grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr; /* Adjust for smaller screens */
-        font-size: 16px; /* Adjust font size */
+        grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr; 
+        font-size: 16px; 
     }
 
     .cartitems-total {
-        margin-right: 50px; /* Reduce margin */
+        margin-right: 50px; 
     }
 
     .cartitems-promobox input {
-        width: 100%; /* Make the input box full width */
+        width: 100%; 
     }
 
     .cartitems-promobox button {
-        width: 100%; /* Make the button full width */
+        width: 100%; 
     }
 }
 
 @media (max-width: 900px) {
     .cartitems {
-        margin: 40px 20px; /* Further reduce margins for small screens */
+        margin: 40px 20px; 
     }
 
     .cartitems-format-main {
-        grid-template-columns: 1fr 2fr 1fr 1fr; /* Reduce the grid columns for smaller screens */
+        grid-template-columns: 1fr 2fr 1fr 1fr;
     }
 
     .cartitems-total {
-        margin-right: 30px; /* Smaller margin on right */
+        margin-right: 30px; 
     }
 
     .cartitems-promobox {
-        width: 100%; /* Full width of container */
+        width: 100%; 
     }
 }
 
 @media (max-width: 600px) {
     .cartitems {
-        margin: 20px 10px; /* Compact margins for very small screens */
+        margin: 20px 10px; 
     }
 
     .cartitems-format-main {
-        grid-template-columns: 1fr 2fr 1fr; /* Collapse columns into fewer on mobile */
-        font-size: 14px; /* Smaller font size */
-    }
+        grid-template-columns: 1fr 2fr 1fr; 
+        font-size: 14px; }
 
     .cartitems-remove-icon {
-        margin: 0 10px; /* Reduce margin for icon */
+        margin: 0 10px; 
     }
 
     .cartitems-quantity {
-        width: 80px; /* Smaller width for quantity box */
+        width: 80px; 
     }
 
     .cartitems-total {
-        margin-right: 20px; /* Further reduce margin */
+        margin-right: 20px; 
     }
 
     .cartitems-promobox {
-        width: 100%; /* Full width for promo box */
-        margin-top: 10px; /* Reduce margin */
+        width: 100%; 
+        margin-top: 10px; 
     }
 
     .cartitems-promobox input {
-        width: 100%; /* Input field takes up full width */
+        width: 100%; 
     }
 
     .cartitems-promobox button {
-        width: 100%; /* Button takes up full width */
+        width: 100%; 
     }
 }

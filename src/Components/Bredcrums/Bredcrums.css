@@ -11,17 +11,17 @@
     text-transform: capitalize;
 }
 
-/* Responsive Design */
+
 @media (max-width: 900px) {
     .bredcrums {
-        font-size: 14px; /* Reduce font size for medium screens */
-        gap: 6px; /* Reduce gap between breadcrumb items */
+        font-size: 14px; 
+        gap: 6px; 
     }
 }
 
 @media (max-width: 600px) {
     .bredcrums {
-        font-size: 12px; /* Smaller font size for small screens */
-        gap: 4px; /* Further reduce gap for small screens */
+        font-size: 12px; 
+        gap: 4px; 
     }
 }

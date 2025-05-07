@@ -25,42 +25,41 @@
     gap: 30px;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
     .relatedproducts h1 {
-        font-size: 35px; /* Adjust font size for medium screens */
+        font-size: 35px;
     }
 
     .relatedproducts-item {
-        gap: 20px; /* Reduce gap for medium screens */
+        gap: 20px;
     }
 }
 
 @media (max-width: 900px) {
     .relatedproducts h1 {
-        font-size: 30px; /* Further reduce font size for smaller screens */
+        font-size: 30px;
     }
 
     .relatedproducts-item {
-        margin-top: 30px; /* Reduce margin-top */
-        gap: 15px; /* Adjust the gap for smaller screens */
+        margin-top: 30px;
+        gap: 15px;
     }
 }
 
 @media (max-width: 600px) {
     .relatedproducts {
-        height: auto; /* Let the height adjust according to content on mobile */
-        padding: 20px; /* Add some padding on smaller screens */
+        height: auto;
+        padding: 20px;
     }
 
     .relatedproducts h1 {
-        font-size: 24px; /* Smaller font size for mobile */
+        font-size: 24px;
     }
 
     .relatedproducts-item {
-        margin-top: 20px; /* Adjust margin-top for mobile */
-        gap: 10px; /* Smaller gap for mobile */
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center-align the items */
+        margin-top: 20px;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
     }
 }

@@ -3,7 +3,7 @@
     background: linear-gradient(180deg, #47fdae, #e1ffea22 60%);
     display: flex;
     flex-direction: row;
-    /* Added flex-direction to make sure the layout stays horizontal */
+    
 }
 
 .hero-left {
@@ -54,57 +54,57 @@
     justify-content: center;
 }
 
-/* Responsive Design */
+
 @media (max-width: 1200px) {
     .hero-left h2 {
-        font-size: 18px; /* Adjust font size for smaller screens */
+        font-size: 18px; 
     }
 
     .hero-left p {
-        font-size: 50px; /* Slightly reduce font size */
+        font-size: 50px; 
     }
 
     .hero-latest-btn {
-        width: 250px; /* Adjust button width */
-        height: 45px; /* Adjust button height */
+        width: 250px; 
+        height: 45px; 
     }
 }
 
 @media (max-width: 900px) {
     .hero {
-        flex-direction: column; /* Stack the left and right sections on smaller screens */
-        height: auto; /* Adjust height to content */
-        padding: 20px; /* Add padding around the content */
+        flex-direction: column; 
+        height: auto; 
+        padding: 20px; 
     }
 
     .hero-left {
-        padding-left: 20px; /* Reduce left padding */
-        padding-right: 20px; /* Add some padding on the right */
+        padding-left: 20px; 
+        padding-right: 20px; 
     }
 
     .hero-left p {
-        font-size: 40px; /* Further reduce the font size */
+        font-size: 40px; 
     }
 
     .hero-latest-btn {
-        width: 220px; /* Adjust button width */
-        height: 45px; /* Adjust button height */
-        font-size: 16px; /* Adjust button font size */
+        width: 220px; 
+        height: 45px; 
+        font-size: 16px; 
     }
 }
 
 @media (max-width: 600px) {
     .hero-left p {
-        font-size: 30px; /* Reduce font size for very small screens */
+        font-size: 30px;
     }
 
     .hero-latest-btn {
-        width: 200px; /* Adjust button width */
-        height: 40px; /* Adjust button height */
-        font-size: 14px; /* Adjust button font size */
+        width: 200px; 
+        height: 40px; 
+        font-size: 14px; 
     }
 
     .hero-hand-icon {
-        gap: 10px; /* Reduce gap between icons */
+        gap: 10px; 
     }
 }

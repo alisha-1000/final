@@ -12,21 +12,20 @@ body {
   font-style: normal;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
   body {
-    font-size: 16px; /* Slightly reduce font size for medium-sized screens */
+    font-size: 16px;
   }
 }
 
 @media (max-width: 900px) {
   body {
-    font-size: 14px; /* Reduce font size for smaller screens */
+    font-size: 14px;
   }
 }
 
 @media (max-width: 600px) {
   body {
-    font-size: 12px; /* Further reduce font size for very small screens */
+    font-size: 12px;
   }
 }

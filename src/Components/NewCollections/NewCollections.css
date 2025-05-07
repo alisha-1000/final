@@ -26,35 +26,34 @@
     gap: 30px;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
     .newcollections h1 {
-        font-size: 35px; /* Reduce heading size for medium screens */
+        font-size: 35px;
     }
 
     .collections {
-        grid-template-columns: 1fr 1fr 1fr; /* Adjust to 3 columns */
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
 @media (max-width: 900px) {
     .newcollections h1 {
-        font-size: 30px; /* Further reduce font size */
+        font-size: 30px;
     }
 
     .collections {
-        grid-template-columns: 1fr 1fr; /* Adjust to 2 columns */
-        gap: 20px; /* Reduce gap between items */
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
 }
 
 @media (max-width: 600px) {
     .newcollections h1 {
-        font-size: 24px; /* Reduce font size for mobile */
+        font-size: 24px;
     }
 
     .collections {
-        grid-template-columns: 1fr; /* Stack items in a single column */
-        gap: 15px; /* Reduce gap further */
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 }

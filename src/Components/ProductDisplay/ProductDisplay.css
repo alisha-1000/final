@@ -15,9 +15,9 @@
 }
 
 .productdisplay-img-list img {
-    width: 160px; /* Set a consistent width */
-    height: 160px; /* Set a consistent height */
-    object-fit: cover; /* Ensure images are cropped to maintain aspect ratio */
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
 }
 
 .productdisplay-main-img {
@@ -104,106 +104,105 @@
     font-weight: 600;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
     .productdisplay {
-        margin: 0px 30px; /* Adjust margin for medium-sized screens */
+        margin: 0px 30px;
     }
 
     .productdisplay-left {
-        gap: 15px; /* Reduce gap for smaller screens */
+        gap: 15px;
     }
 
     .productdisplay-main-img {
-        height: 450px; /* Slightly reduce the main image height */
+        height: 450px;
     }
 
     .productdisplay-right h1 {
-        font-size: 35px; /* Adjust font size for better readability */
+        font-size: 35px;
     }
 
     .productdisplay-right-prices {
-        gap: 20px; /* Reduce gap between prices */
+        gap: 20px;
     }
 
     .productdisplay-right button {
-        width: 350px; /* Adjust button width */
+        width: 350px;
     }
 }
 
 @media (max-width: 900px) {
     .productdisplay {
-        flex-direction: column; /* Stack items vertically on smaller screens */
-        margin: 0px 20px; /* Reduce margin */
+        flex-direction: column;
+        margin: 0px 20px;
     }
 
     .productdisplay-left {
         flex-direction: row;
-        gap: 10px; /* Reduce gap */
+        gap: 10px;
     }
 
     .productdisplay-img-list img {
-        width: 120px; /* Adjust image size for smaller screens */
-        height: 120px; /* Adjust image size */
+        width: 120px;
+        height: 120px;
     }
 
     .productdisplay-main-img {
-        height: 400px; /* Reduce main image height */
+        height: 400px;
     }
 
     .productdisplay-right h1 {
-        font-size: 30px; /* Further reduce font size */
+        font-size: 30px;
     }
 
     .productdisplay-right-star {
-        font-size: 14px; /* Smaller star rating font */
+        font-size: 14px;
     }
 
     .productdisplay-right-prices {
-        flex-direction: column; /* Stack price info vertically */
-        gap: 10px; /* Reduce gap */
+        flex-direction: column;
+        gap: 10px;
     }
 
     .productdisplay-right-size h1 {
-        font-size: 14px; /* Smaller font size for size heading */
+        font-size: 14px;
     }
 
     .productdisplay-right button {
-        width: 100%; /* Make button full width */
+        width: 100%;
     }
 }
 
 @media (max-width: 600px) {
     .productdisplay {
-        margin: 0px 10px; /* Reduce margin for small screens */
+        margin: 0px 10px;
     }
 
     .productdisplay-left {
-        gap: 8px; /* Further reduce gap */
+        gap: 8px;
     }
 
     .productdisplay-img-list img {
-        width: 100px; /* Adjust image size further */
-        height: 100px; /* Adjust image size */
+        width: 100px;
+        height: 100px;
     }
 
     .productdisplay-main-img {
-        height: 350px; /* Reduce main image height further */
+        height: 350px;
     }
 
     .productdisplay-right h1 {
-        font-size: 24px; /* Much smaller font size for mobile */
+        font-size: 24px;
     }
 
     .productdisplay-right-prices {
-        gap: 15px; /* Adjust gap between prices for mobile */
+        gap: 15px;
     }
 
     .productdisplay-right-button {
-        font-size: 14px; /* Smaller font size for mobile button */
+        font-size: 14px;
     }
 
     .productdisplay-right-size h1 {
-        font-size: 12px; /* Adjust size heading font size */
+        font-size: 12px;
     }
 }

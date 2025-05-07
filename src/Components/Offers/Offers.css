@@ -51,85 +51,84 @@
     height: 330px;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
     .offers {
-        width: 80%; /* Adjust width for medium-sized screens */
-        padding: 0px 100px; /* Adjust padding */
+        width: 80%;
+        padding: 0px 100px;
     }
 
     .offers-left h1 {
-        font-size: 35px; /* Adjust font size */
+        font-size: 35px;
     }
 
     .offers-left p {
-        font-size: 16px; /* Adjust font size */
+        font-size: 16px;
     }
 
     .offers-left button {
-        width: 180px; /* Adjust button width */
+        width: 180px;
     }
 
     .offers-right img {
-        height: 300px; /* Adjust image size */
+        height: 300px;
     }
 }
 
 @media (max-width: 900px) {
     .offers {
-        width: 90%; /* Adjust width for smaller screens */
-        height: auto; /* Let the height adjust automatically */
-        padding: 0px 50px; /* Reduce padding */
-        flex-direction: column; /* Stack items vertically */
-        margin-top: 100px; /* Adjust margin */
+        width: 90%;
+        height: auto;
+        padding: 0px 50px;
+        flex-direction: column;
+        margin-top: 100px;
     }
 
     .offers-left {
-        margin-bottom: 30px; /* Add some space below left section */
+        margin-bottom: 30px;
     }
 
     .offers-left h1 {
-        font-size: 30px; /* Further reduce font size */
+        font-size: 30px;
     }
 
     .offers-left p {
-        font-size: 14px; /* Further reduce font size */
+        font-size: 14px;
     }
 
     .offers-left button {
-        width: 160px; /* Reduce button width */
+        width: 160px;
     }
 
     .offers-right {
-        justify-content: center; /* Center the image */
+        justify-content: center;
     }
 
     .offers-right img {
-        height: 250px; /* Adjust image size */
+        height: 250px;
     }
 }
 
 @media (max-width: 600px) {
     .offers {
-        width: 100%; /* Full width for small screens */
-        height: auto; /* Allow height to adjust */
-        padding: 20px; /* Reduce padding */
+        width: 100%;
+        height: auto;
+        padding: 20px;
     }
 
     .offers-left h1 {
-        font-size: 24px; /* Small font size for mobile */
+        font-size: 24px;
     }
 
     .offers-left p {
-        font-size: 12px; /* Small font size for mobile */
+        font-size: 12px;
     }
 
     .offers-left button {
-        width: 150px; /* Adjust button width */
-        font-size: 14px; /* Reduce font size */
+        width: 150px;
+        font-size: 14px;
     }
 
     .offers-right img {
-        height: 200px; /* Adjust image size for mobile */
+        height: 200px;
     }
 }
