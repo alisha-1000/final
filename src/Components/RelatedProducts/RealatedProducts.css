@@ -1,24 +1,66 @@
-.relatedproducts{
+.relatedproducts {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     height: 90vh;
-
 }
-.relatedproducts h1{
+
+.relatedproducts h1 {
     color: #171717;
     font-size: 40px;
     font-weight: 600;
 }
-.relatedproducts hr{
+
+.relatedproducts hr {
     width: 200px;
     height: 6px;
     border-radius: 10px;
     background: #252525;
 }
-.relatedproducts-item{
+
+.relatedproducts-item {
     margin-top: 50px;
     display: flex;
     gap: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .relatedproducts h1 {
+        font-size: 35px; /* Adjust font size for medium screens */
+    }
+
+    .relatedproducts-item {
+        gap: 20px; /* Reduce gap for medium screens */
+    }
+}
+
+@media (max-width: 900px) {
+    .relatedproducts h1 {
+        font-size: 30px; /* Further reduce font size for smaller screens */
+    }
+
+    .relatedproducts-item {
+        margin-top: 30px; /* Reduce margin-top */
+        gap: 15px; /* Adjust the gap for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .relatedproducts {
+        height: auto; /* Let the height adjust according to content on mobile */
+        padding: 20px; /* Add some padding on smaller screens */
+    }
+
+    .relatedproducts h1 {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    .relatedproducts-item {
+        margin-top: 20px; /* Adjust margin-top for mobile */
+        gap: 10px; /* Smaller gap for mobile */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align the items */
+    }
 }

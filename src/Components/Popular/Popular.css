@@ -1,25 +1,72 @@
-.popular{
+.popular {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     height: 90vh;
-    
 }
-.popular h1{
-    color: #171717;
-    font-size:40px;
-    font-weight: 600;
 
+.popular h1 {
+    color: #171717;
+    font-size: 40px;
+    font-weight: 600;
 }
-.popular hr{
+
+.popular hr {
     width: 200px;
     height: 6px;
     border-radius: 10px;
     background: #252525;
 }
-.popular-item{
+
+.popular-item {
     margin-top: 50px;
     display: flex;
     gap: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .popular h1 {
+        font-size: 35px; /* Adjust heading font size for medium screens */
+    }
+
+    .popular-item {
+        gap: 20px; /* Reduce gap between items */
+    }
+}
+
+@media (max-width: 900px) {
+    .popular {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px; /* Add padding for small screens */
+    }
+
+    .popular h1 {
+        font-size: 30px; /* Further reduce font size */
+    }
+
+    .popular-item {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Reduce gap between items */
+        margin-top: 30px; /* Reduce margin for smaller screens */
+    }
+
+    .popular hr {
+        width: 150px; /* Adjust width of horizontal line for smaller screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .popular h1 {
+        font-size: 24px; /* Reduce font size for mobile */
+    }
+
+    .popular-item {
+        gap: 15px; /* Further reduce gap for mobile */
+    }
+
+    .popular hr {
+        width: 120px; /* Further reduce the width of the horizontal line */
+    }
 }

@@ -1,4 +1,4 @@
-.bredcrums{
+.bredcrums {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -9,4 +9,19 @@
     margin-top: 30px;
     margin-bottom: 30px;
     text-transform: capitalize;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .bredcrums {
+        font-size: 14px; /* Reduce font size for medium screens */
+        gap: 6px; /* Reduce gap between breadcrumb items */
+    }
+}
+
+@media (max-width: 600px) {
+    .bredcrums {
+        font-size: 12px; /* Smaller font size for small screens */
+        gap: 4px; /* Further reduce gap for small screens */
+    }
 }

@@ -1,13 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
- 
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  body {
+    font-size: 16px; /* Slightly reduce font size for medium-sized screens */
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 12px; /* Further reduce font size for very small screens */
+  }
 }

@@ -1,4 +1,4 @@
-.offers{
+.offers {
     width: 65%;
     height: 60vh;
     display: flex;
@@ -6,25 +6,28 @@
     margin-top: 150px;
     padding: 0px 140px;
     margin-bottom: 150px;
-    background:linear-gradient(180deg,#e1ffea22, #47fdae 60%);
+    background: linear-gradient(180deg, #e1ffea22, #47fdae 60%);
 }
-.offers-left{
-    flex:1;
+
+.offers-left {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.offers-left h1{
+
+.offers-left h1 {
     color: #171717;
     font-size: 40px;
 }
-.offers-left p{
+
+.offers-left p {
     color: #171717;
     font-size: 18px;
     font-weight: 600;
 }
 
-.offers-left button{
+.offers-left button {
     width: 200px;
     height: 40px;
     border-radius: 35px;
@@ -36,13 +39,97 @@
     margin-top: 30px;
     cursor: pointer;
 }
-.offers-right{
+
+.offers-right {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
 }
-.offers-right img{
+
+.offers-right img {
     height: 330px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .offers {
+        width: 80%; /* Adjust width for medium-sized screens */
+        padding: 0px 100px; /* Adjust padding */
+    }
+
+    .offers-left h1 {
+        font-size: 35px; /* Adjust font size */
+    }
+
+    .offers-left p {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .offers-left button {
+        width: 180px; /* Adjust button width */
+    }
+
+    .offers-right img {
+        height: 300px; /* Adjust image size */
+    }
+}
+
+@media (max-width: 900px) {
+    .offers {
+        width: 90%; /* Adjust width for smaller screens */
+        height: auto; /* Let the height adjust automatically */
+        padding: 0px 50px; /* Reduce padding */
+        flex-direction: column; /* Stack items vertically */
+        margin-top: 100px; /* Adjust margin */
+    }
+
+    .offers-left {
+        margin-bottom: 30px; /* Add some space below left section */
+    }
+
+    .offers-left h1 {
+        font-size: 30px; /* Further reduce font size */
+    }
+
+    .offers-left p {
+        font-size: 14px; /* Further reduce font size */
+    }
+
+    .offers-left button {
+        width: 160px; /* Reduce button width */
+    }
+
+    .offers-right {
+        justify-content: center; /* Center the image */
+    }
+
+    .offers-right img {
+        height: 250px; /* Adjust image size */
+    }
+}
+
+@media (max-width: 600px) {
+    .offers {
+        width: 100%; /* Full width for small screens */
+        height: auto; /* Allow height to adjust */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .offers-left h1 {
+        font-size: 24px; /* Small font size for mobile */
+    }
+
+    .offers-left p {
+        font-size: 12px; /* Small font size for mobile */
+    }
+
+    .offers-left button {
+        width: 150px; /* Adjust button width */
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .offers-right img {
+        height: 200px; /* Adjust image size for mobile */
+    }
 }

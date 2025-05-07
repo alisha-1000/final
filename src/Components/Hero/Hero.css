@@ -1,33 +1,38 @@
-.hero{
+.hero {
     height: 100vh;
-    background:linear-gradient(180deg,#47fdae,#e1ffea22 60%);
+    background: linear-gradient(180deg, #47fdae, #e1ffea22 60%);
     display: flex;
+    flex-direction: row;
+    /* Added flex-direction to make sure the layout stays horizontal */
 }
-.hero-left{
-    flex:1;
+
+.hero-left {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    padding-left:80px ;
-    
+    padding-left: 80px;
 }
-.hero-left h2{
+
+.hero-left h2 {
     color: #090909;
     font-size: 20px;
     font-weight: 600;
 }
-.hero-left p{
+
+.hero-left p {
     color: #171717;
     font-size: 60px;
     font-weight: 700;
 }
-.hero-hand-icon{
+
+.hero-hand-icon {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.hero-latest-btn{
+
+.hero-latest-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,9 +46,65 @@
     font-size: 18px;
     font-weight: 500;
 }
-.hero-right{
+
+.hero-right {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .hero-left h2 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .hero-left p {
+        font-size: 50px; /* Slightly reduce font size */
+    }
+
+    .hero-latest-btn {
+        width: 250px; /* Adjust button width */
+        height: 45px; /* Adjust button height */
+    }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column; /* Stack the left and right sections on smaller screens */
+        height: auto; /* Adjust height to content */
+        padding: 20px; /* Add padding around the content */
+    }
+
+    .hero-left {
+        padding-left: 20px; /* Reduce left padding */
+        padding-right: 20px; /* Add some padding on the right */
+    }
+
+    .hero-left p {
+        font-size: 40px; /* Further reduce the font size */
+    }
+
+    .hero-latest-btn {
+        width: 220px; /* Adjust button width */
+        height: 45px; /* Adjust button height */
+        font-size: 16px; /* Adjust button font size */
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-left p {
+        font-size: 30px; /* Reduce font size for very small screens */
+    }
+
+    .hero-latest-btn {
+        width: 200px; /* Adjust button width */
+        height: 40px; /* Adjust button height */
+        font-size: 14px; /* Adjust button font size */
+    }
+
+    .hero-hand-icon {
+        gap: 10px; /* Reduce gap between icons */
+    }
 }

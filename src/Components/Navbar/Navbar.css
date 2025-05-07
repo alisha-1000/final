@@ -1,20 +1,24 @@
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-around;
     padding: 16px;
-    box-shadow:0 1px 3px -2px black ;
+    box-shadow: 0 1px 3px -2px black;
+    flex-wrap: wrap; /* Allows wrapping when needed */
 }
-.nav-logo{
+
+.nav-logo {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.nav-logo p{
-    color:#171717;
+
+.nav-logo p {
+    color: #171717;
     font-size: 28px;
     font-weight: 600;
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
@@ -22,28 +26,33 @@
     color: #626262;
     font-size: 18px;
     font-weight: 500;
+    flex-wrap: wrap; /* Allows menu items to wrap to the next line if necessary */
 }
-.nav-menu li{
+
+.nav-menu li {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:3px;
+    gap: 3px;
     cursor: pointer;
 }
-.nav-menu hr{
+
+.nav-menu hr {
     border: none;
     width: 80%;
     height: 3px;
     border-radius: 10px;
     background: #ff4141;
 }
-.nav-login-cart{
+
+.nav-login-cart {
     display: flex;
     align-items: center;
     gap: 45px;
 }
-.nav-login-cart button{
+
+.nav-login-cart button {
     width: 140px;
     height: 40px;
     outline: none;
@@ -52,22 +61,85 @@
     color: #515151;
     font-size: 16px;
     font-weight: 500;
-    background:white;
+    background: white;
     cursor: pointer;
 }
-.nav-login-cart button:active{
+
+.nav-login-cart button:active {
     background: #f3f3f3;
 }
-.nav-cart-count{
-width: 22px;
-height:22px;
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: -35px;
-margin-left: -55px;
-border-radius: 11px;
-font-size: 14px;
-background: red;
-color: white;
+
+.nav-cart-count {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .nav-menu {
+        gap: 30px; /* Reduce gap between menu items */
+    }
+
+    .nav-menu li {
+        font-size: 16px; /* Reduce font size for medium screens */
+    }
+
+    .nav-logo p {
+        font-size: 24px; /* Reduce logo font size */
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        padding: 16px 10px; /* Reduce padding on smaller screens */
+    }
+
+    .nav-menu {
+        gap: 20px; /* Reduce gap between menu items */
+    }
+
+    .nav-login-cart {
+        gap: 30px; /* Reduce space between login and cart */
+    }
+
+    .nav-cart-count {
+        margin-top: -25px; /* Adjust cart count for smaller screens */
+        margin-left: -40px;
+    }
+
+    .nav-logo p {
+        font-size: 20px; /* Further reduce logo font size */
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 16px 5px; /* Reduce padding for mobile screens */
+    }
+
+    .nav-menu {
+        gap: 15px; /* Reduce gap between menu items */
+        justify-content: center; /* Center the menu items */
+    }
+
+    .nav-login-cart {
+        gap: 20px; /* Reduce gap between login and cart */
+    }
+
+    .nav-menu li {
+        font-size: 14px; /* Reduce font size for small screens */
+    }
+
+    .nav-logo p {
+        font-size: 18px; /* Adjust logo font size for mobile */
+    }
 }

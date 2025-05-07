@@ -1,26 +1,60 @@
-.newcollections{
+.newcollections {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-margin-bottom: 100px;
-    
+    margin-bottom: 100px;
 }
-.newcollections h1{
-    color: #171717;
-    font-size:40px;
-    font-weight: 600;
 
+.newcollections h1 {
+    color: #171717;
+    font-size: 40px;
+    font-weight: 600;
 }
-.newcollections hr{
+
+.newcollections hr {
     width: 200px;
     height: 6px;
     border-radius: 10px;
     background: #252525;
 }
-.collections{
+
+.collections {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 50px;
     gap: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .newcollections h1 {
+        font-size: 35px; /* Reduce heading size for medium screens */
+    }
+
+    .collections {
+        grid-template-columns: 1fr 1fr 1fr; /* Adjust to 3 columns */
+    }
+}
+
+@media (max-width: 900px) {
+    .newcollections h1 {
+        font-size: 30px; /* Further reduce font size */
+    }
+
+    .collections {
+        grid-template-columns: 1fr 1fr; /* Adjust to 2 columns */
+        gap: 20px; /* Reduce gap between items */
+    }
+}
+
+@media (max-width: 600px) {
+    .newcollections h1 {
+        font-size: 24px; /* Reduce font size for mobile */
+    }
+
+    .collections {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+        gap: 15px; /* Reduce gap further */
+    }
 }

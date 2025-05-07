@@ -1,13 +1,14 @@
 .descriptionbox {
     margin: 80px 50px;
- 
-
 }
 
-.descriptionbox-navigator{
+.descriptionbox-navigator {
     display: flex;
+    flex-wrap: wrap; /* Allow the navigator to wrap on smaller screens */
+    gap: 10px; /* Add space between items */
 }
-.descriptionbox-nav-box{
+
+.descriptionbox-nav-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,16 +18,67 @@
     height: 50px;
     border: 1px solid #d0d0d0;
 }
-.descriptionbox-nav-box .fade{
+
+.descriptionbox-nav-box .fade {
     background: #fbfbfb;
     color: #555;
-
 }
-.descriptionbox-description{
+
+.descriptionbox-description {
     display: flex;
     flex-direction: column;
     gap: 20px;
     border: 1px solid #D0D0D0;
     padding: 40px;
     padding-bottom: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .descriptionbox {
+        margin: 60px 40px; /* Adjust margins */
+    }
+
+    .descriptionbox-nav-box {
+        font-size: 14px; /* Reduce font size on smaller screens */
+        width: 130px; /* Reduce width */
+        height: 45px; /* Adjust height */
+    }
+
+    .descriptionbox-description {
+        padding: 30px; /* Reduce padding */
+    }
+}
+
+@media (max-width: 900px) {
+    .descriptionbox {
+        margin: 50px 20px; /* Reduce margins for smaller screens */
+    }
+
+    .descriptionbox-nav-box {
+        font-size: 14px; /* Adjust font size */
+        width: 120px; /* Further reduce width */
+        height: 40px; /* Further reduce height */
+    }
+
+    .descriptionbox-description {
+        padding: 20px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 600px) {
+    .descriptionbox {
+        margin: 30px 10px; /* More compact margins on very small screens */
+    }
+
+    .descriptionbox-nav-box {
+        font-size: 12px; /* Smaller font size */
+        width: 100px; /* More compact width */
+        height: 35px; /* Smaller height */
+    }
+
+    .descriptionbox-description {
+        padding: 15px; /* Further reduce padding */
+        gap: 15px; /* Adjust gap between elements */
+    }
 }
