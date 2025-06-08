@@ -9,6 +9,9 @@ import Footer from "./Components/Footer/Footer"
 import men_banner from "./assets/banner.jpg"
 import women_banner from "./assets/women_banner.avif"
 import kids_banner from "./assets/kids_banner.jpg"
+import WishlistCheckout from './Pages/WishlistCheckout'
+import Wishlist from './Pages/Wishlist'
+
 function App() {
  
   return (
@@ -24,6 +27,8 @@ function App() {
         <Route path="/product/:productId" element={<Product/>}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/login" element={<LoginSignup/>}/>
+        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path='/wishlist-checkout' element={<WishlistCheckout />} />
       </Routes>
       <Footer/>
       </BrowserRouter>
