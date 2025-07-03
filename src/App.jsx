@@ -11,6 +11,8 @@ import women_banner from "./assets/women_banner.avif"
 import kids_banner from "./assets/kids_banner.jpg"
 import WishlistCheckout from './Pages/WishlistCheckout'
 import Wishlist from './Pages/Wishlist'
+import BillingDetails from './Pages/BillingDetails'
+import Payment from './Pages/Payment'
 
 function App() {
  
@@ -29,6 +31,8 @@ function App() {
         <Route path="/login" element={<LoginSignup/>}/>
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path='/wishlist-checkout' element={<WishlistCheckout />} />
+        <Route path='/billing' element={<BillingDetails />} />
+        <Route path='/payment' element={<Payment />} />
       </Routes>
       <Footer/>
       </BrowserRouter>

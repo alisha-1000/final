@@ -22,6 +22,7 @@ const Item = (props) => {
                     ${old_price}
                 </div>
             </div>
+            <hr className="item-divider" style={{ margin: '10px 0 0 0', border: 0, borderTop: '1px solid #eee' }} />
             <div className="item-buttons">
                 <button className="add-to-cart" onClick={() => addToCart(id)}>Add to Cart</button>
                 {isWishlisted ? (

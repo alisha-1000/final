@@ -1,12 +1,20 @@
 .item {
     width: 270px;
     min-height: 420px;
-    border: 1px solid black;
+    border: none;
     border-radius: 20px;
     margin: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(60, 180, 120, 0.10), 0 1.5px 6px rgba(0,0,0,0.04);
+    transition: box-shadow 0.25s, transform 0.18s;
+}
+
+.item:hover {
+    box-shadow: 0 8px 32px rgba(60, 180, 120, 0.18), 0 3px 12px rgba(0,0,0,0.08);
+    transform: translateY(-6px) scale(1.025);
 }
 
 .item p {
@@ -42,54 +50,63 @@
     text-decoration: line-through;
 }
 
+.item-divider {
+    margin: 16px 0 0 0;
+    border: 0;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(90deg, #4CAF50 0%, #f50057 100%);
+    border-radius: 2px;
+    opacity: 0.18;
+}
+
 .item-buttons {
     display: flex;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 12px;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    justify-content: stretch;
+}
+
+.item-buttons button {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 1.5px 6px rgba(60, 180, 120, 0.08);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    letter-spacing: 0.02em;
 }
 
 .add-to-cart {
-    padding: 10px 20px;
-    background: #4CAF50;
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
     color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    box-shadow: none;
-    transition: box-shadow 0.2s, background 0.2s, transform 0.15s;
 }
 
 .add-to-cart:hover {
-    background: #388e3c;
-    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.15);
-    transform: translateY(-2px) scale(1.03);
+    background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(67, 206, 162, 0.18);
+    transform: translateY(-2px) scale(1.04);
 }
 
 .add-to-wishlist, .remove-from-wishlist {
-    padding: 10px 20px;
-    background: #f50057;
+    background: linear-gradient(90deg, #f857a6 0%, #ff5858 100%);
     color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    box-shadow: none;
-    transition: box-shadow 0.2s, background 0.2s, transform 0.15s;
 }
 
 .add-to-wishlist:hover, .remove-from-wishlist:hover {
-    background: #ad1457;
-    box-shadow: 0 2px 8px rgba(245, 0, 87, 0.15);
-    transform: translateY(-2px) scale(1.03);
+    background: linear-gradient(90deg, #ff5858 0%, #f857a6 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(248, 87, 166, 0.18);
+    transform: translateY(-2px) scale(1.04);
 }
 
 .wishlist-btn {
