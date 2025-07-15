@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className='navbar'>
             <div className="nav-logo">
                 <img src={logo} alt="" height="50px" />
-                <p>Shopify</p>
+                <p>Shoppy</p>
             </div>
             <ul className='nav-menu'>
                 <li onClick={()=>{setMenu("home")}}><Link style={{textDecoration:"none",color:"#626262"}} to="/">Home</Link>{menu==="home" ? <hr/>:<></>}</li>
