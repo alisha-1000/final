@@ -11,21 +11,7 @@ const Cart = () => {
   return (
     <div className='cart'>
       <div className="cart-items">
-        <div className="cart-items-format-main">
-          <p>Products</p>
-          <p>Title</p>
-          <p>Price</p>
-          <p>Quantity</p>
-          <p>Total</p>
-          <p>Remove</p>
-        </div>
-        <hr />
-        {Object.keys(cartItems).map((itemId) => {
-          if (cartItems[itemId] > 0) {
-            return <CartItems key={itemId} id={itemId} />
-          }
-          return null;
-        })}
+        <CartItems />
       </div>
       <div className="cart-down">
         <div className="cart-total">
