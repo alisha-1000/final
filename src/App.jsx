@@ -13,6 +13,7 @@ import WishlistCheckout from './Pages/WishlistCheckout'
 import Wishlist from './Pages/Wishlist'
 import BillingDetails from './Pages/BillingDetails'
 import Payment from './Pages/Payment'
+import Checkout from './Pages/Checkout';
 
 function App() {
  
@@ -31,6 +32,7 @@ function App() {
         <Route path="/login" element={<LoginSignup/>}/>
         <Route path="/wishlist" element={<Wishlist />} />
         <Route path='/wishlist-checkout' element={<WishlistCheckout />} />
+        <Route path='/checkout' element={<Checkout />} />
         <Route path='/billing' element={<BillingDetails />} />
         <Route path='/payment' element={<Payment />} />
       </Routes>

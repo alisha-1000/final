@@ -71,6 +71,11 @@ const ShopContextProvider = (props) =>{
         return totalItem;
     }
 
+    // Add clearCart function
+    const clearCart = () => {
+        setCartItems(getDefaultCart());
+    }
+
     const contextValue = {
         all_product,
         cartItems,
@@ -81,7 +86,8 @@ const ShopContextProvider = (props) =>{
         removeFromWishlist,
         getTotalCartItems,
         getTotalCartAmount,
-        getTotalWishlistItems
+        getTotalWishlistItems,
+        clearCart // Expose clearCart
     };
 
     return (

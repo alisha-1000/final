@@ -46,7 +46,6 @@ const Cart = () => {
               <p>${getTotalCartAmount()}</p>
             </div>
           </div>
-          <button onClick={() => navigate('/billing')}>PROCEED TO CHECKOUT</button>
         </div>
         <div className="cart-promocode">
           <p>If you have a promo code, Enter it here</p>
@@ -55,6 +54,7 @@ const Cart = () => {
             <button>Submit</button>
           </div>
         </div>
+        <button onClick={() => navigate('/checkout')}>PROCEED TO CHECKOUT</button>
       </div>
     </div>
   )

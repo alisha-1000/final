@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import { ShopContext } from '../Context/ShopContext';
 
 const Payment = () => {
   const [method, setMethod] = useState('card');
   const [success, setSuccess] = useState(false);
   const [billing, setBilling] = useState(null);
+  const { clearCart } = useContext(ShopContext);
 
   useEffect(() => {
     const details = localStorage.getItem('billingDetails');
@@ -13,6 +15,7 @@ const Payment = () => {
   const handlePayment = (e) => {
     e.preventDefault();
     setSuccess(true);
+    clearCart(); // Clear the cart after successful payment
   };
 
   return (

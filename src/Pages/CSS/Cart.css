@@ -186,6 +186,28 @@
     background-color: #45a049;
 }
 
+.cart-down > button {
+    width: 100%;
+    padding: 16px 0;
+    background: linear-gradient(90deg, #ff4141 0%, #ff6a00 100%);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 32px;
+    box-shadow: 0 4px 16px rgba(255, 65, 65, 0.15);
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.cart-down > button:hover {
+    background: linear-gradient(90deg, #d7263d 0%, #ff6a00 100%);
+    transform: scale(1.04) translateY(-2px);
+    box-shadow: 0 8px 24px rgba(255, 65, 65, 0.22);
+}
+
 @media(max-width: 800px) {
     .cart-items-format-main {
         display: none;

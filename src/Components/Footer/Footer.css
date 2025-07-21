@@ -1,10 +1,11 @@
 .footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px 40px;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -25,6 +26,9 @@
     gap: 50px;
     color: #252525;
     font-size: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
 .footer-links li {
@@ -34,9 +38,10 @@
 .footer-social-icon {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
-.footer-icons-container {
+.footer-icon-container {
     padding: 10px;
     padding-bottom: 6px;
     background: #fbfbfb;
@@ -47,9 +52,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-top: 30px;
     color: #1a1a1a;
     font-size: 20px;
 }
@@ -62,17 +67,20 @@
     background: #c7c7c7;
 }
 
-
 @media (max-width: 1200px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px 10px;
+    }
     .footer-logo p {
         font-size: 30px; 
     }
-
     .footer-links {
         font-size: 18px; 
         gap: 30px; 
     }
-
     .footer-copyright {
         font-size: 18px;
     }
@@ -80,26 +88,25 @@
 
 @media (max-width: 900px) {
     .footer {
-        padding: 20px 10px; 
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 5px;
     }
-
     .footer-logo p {
         font-size: 25px; 
     }
-
     .footer-links {
         flex-direction: column; 
         gap: 20px; 
         text-align: center; 
     }
-
     .footer-social-icon {
         gap: 15px; 
     }
-
     .footer-copyright {
         font-size: 16px; 
-        gap: 15px; 
+        gap: 10px; 
     }
 }
 
@@ -107,15 +114,12 @@
     .footer-logo p {
         font-size: 22px; 
     }
-
     .footer-links {
         font-size: 16px; 
     }
-
     .footer-social-icon {
         gap: 10px; 
     }
-
     .footer-copyright {
         font-size: 14px; 
     }
