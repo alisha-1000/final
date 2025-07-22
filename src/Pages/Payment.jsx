@@ -15,7 +15,7 @@ const Payment = () => {
   const handlePayment = (e) => {
     e.preventDefault();
     setSuccess(true);
-    clearCart(); // Clear the cart after successful payment
+    clearCart(); 
   };
 
   return (

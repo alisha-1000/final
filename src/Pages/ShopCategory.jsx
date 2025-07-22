@@ -7,10 +7,10 @@ const ShopCategory = (props) => {
   const {all_product}=useContext(ShopContext);
   const [sort, setSort] = useState('default');
 
-  // Filter by category
+  
   let filtered = all_product.filter(item => props.category === item.category);
 
-  // Sort logic
+  
   if (sort === 'price-low-high') {
     filtered = [...filtered].sort((a, b) => a.new_price - b.new_price);
   } else if (sort === 'price-high-low') {

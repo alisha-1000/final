@@ -1,4 +1,4 @@
-// Minor change: file reviewed for deployment troubleshooting
+
 import React, { useContext } from 'react'
 import { ShopContext } from '../Context/ShopContext'
 import CartItems from '../Components/CartItems/CartItems'
